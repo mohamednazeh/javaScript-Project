@@ -1,0 +1,226 @@
+<html>
+
+<head>
+
+    <meta name="viewport" content="with=device-width,intial-scale=1.0">
+    <title>E-commerse website - product page </title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/product.css">
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+
+
+
+</head>
+
+<body>
+
+    <!-- navbar -->
+
+    <nav class="navbar bg">
+        <ul class="links-container">
+            <li class="link-item"><a href="index.html" class="link active">home</a></li>
+            <li class="link-item"><a href="product.html" class="link">product</a></li>
+            <li class="link-item"><a href="signup.html" class="link">signup</a></li>
+            <li class="link-item"><a href="login.html" class="link">login</a></li>
+            <li class="link-item"><a href="contact.html" class="link ">Contact</a></li>
+    
+    
+        </ul>
+        <div class="user-interactions">
+            <div class="cart">
+                <a href="index.html"> <img src="image/cart.png" class="cart-icon" alt=""></a>
+                <span class="cart-item-count">00</span>
+            </div>
+            <div class="user">
+                <a href="login.html"><img src="image/user.png" class="user-icon" alt=""> </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- productImg  productName   productdescription    productPrice   anotherProduct  -->
+
+    <!-- product detail -->
+
+    <section class="product-section">
+        
+        <img src="" class="product-image" alt="" id="productImg">
+        <div class="product-detail"> 
+            <h1 class="product-title" id="productName">premium sofa</h1>
+            <p class="product-des" id="productTitle">The monthly selling plan includes incredible benefits to help you grow your business.
+                Reachmillions of potential customers every day by listing your products</p>
+                <div class="" id="">
+                    <img src="image/no fill star.png" class="starsImg" alt="">
+                    <img src="image/no fill star.png" class="starsImg" alt="">
+                    <img src="image/no fill star.png" class="starsImg" alt="">
+                    <img src="image/no fill star.png" class="starsImg" alt="">
+                    <img src="image/no fill star.png" class="starsImg" alt="">
+                    <span class="reating-count" id="rating">4,023 reviews</span>
+                </div>
+            <p class="price" id="productPrice">$ 499</p>
+             <div class="btn-container">
+                <button class="product-btn buy-btn" id="buy">buy now</button>
+                <button class="product-btn cart-btn" id="addToCart">ADD TO CART</button>
+            </div>
+        </div>
+    </section>
+    <br>
+
+
+    <select id="selectId" name="stuname" onchange="showUser()" class="product-btn cart-btn"  style="margin-left: 100px;">
+    </select>                           
+    <br> <br> <br>
+
+
+
+    <section class="detail-des">
+        <h1 class="section-title">detail</h1>
+        <p class="des" id="productdescription"> </p>
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- review section -->
+
+    <section class="review-section">
+        <h1 class="section-title"> Reviews</h1>
+        <div class="review-container">
+            <div class="review-card">
+                <div class="user-dp" data-rating="3.9"> <img src="image/user 1.png" alt=""></div>
+                <h2 class="review-title"> best quality</h2>
+                <p class="review">The monthly selling plan includes incredible benefits to help you grow your business.
+                    Reachmillions of potential customers every day by listing your products </p>
+            </div>
+
+            <div class="review-card">
+                <div class="user-dp" data-rating="4.2"> <img src="image/user 2.png" alt=""></div>
+                <h2 class="review-title"> on time delivery</h2>
+                <p class="review">The monthly selling plan includes incredible benefits to help you grow your business.
+                    Reachmillions of potential customers every day by listing your products </p>
+            </div>
+
+            <div class="review-card">
+                <div class="user-dp" data-rating="4.9"> <img src="image/user 3.png" alt=""></div>
+                <h2 class="review-title">helpful customer support</h2>
+                <p class="review">The monthly selling plan includes incredible benefits to help you grow your business.
+                    Reachmillions of potential customers every day by listing your products </p>
+            </div>
+
+            <div class="review-card">
+                <div class="user-dp" data-rating="2.9"> <img src="image/user 4.png" alt=""></div>
+                <h2 class="review-title">easy to return products</h2>
+                <p class="review">The monthly selling plan includes incredible benefits to help you grow your business.
+                    Reachmillions of potential customers every day by listing your products </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- add review form -->
+
+    <section class="add-review-section">
+        <h1 class="section-title">add a review</h1>
+        <input type="text" class="review-headline" placeholder="review headline" id="reviewTitle">
+        <textarea placeholder="review" class="review-field" id="txtArea"></textarea>
+        <p class="reating-text"> how much you liked the product</p>
+        <div class="" star-container>
+            <img src="image/no fill star.png" class="rating-star" alt="">
+            <img src="image/no fill star.png" class="rating-star" alt="">
+            <img src="image/no fill star.png" class="rating-star" alt="">
+            <img src="image/no fill star.png" class="rating-star" alt="">
+            <img src="image/no fill star.png" class="rating-star" alt="">
+        </div>
+         <button class="add-review-btn" id="reviewBtn">add review</button>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!-- similar product -->
+
+    <section class="best-selling-product-section">
+        <h1 class="section-title">similar product</h1>
+        <div class="product-container">
+            <div class="product-card">
+                <img src="image/product-1.png" class="product-img" alt="">
+                <p class="product-name">Lights </p>
+            </div>
+
+            <div class="product-card">
+                <img src="image/product-2.png" class="product-img" alt="">
+                <p class="product-name">table </p>
+            </div>
+
+            <div class="product-card">
+                <img src="image/product-3.png" class="product-img" alt="">
+                <p class="product-name">storage </p>
+            </div>
+
+            <div class="product-card">
+                <img src="image/product-4.png" class="product-img" alt="">
+                <p class="product-name">sofa </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+   
+
+
+
+<!------ Footer ------>
+
+<section class="footer">
+    
+    <div class="icons">
+
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p style="width: 100%; 
+        background-color: rgb(83, 65, 3); 
+        font-size: x-large; 
+        color: white; height: 35px;">Made by ITI</p>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+    <script src="Js/product.js"></script>
+
+</body>
+
+</html>
